@@ -1,0 +1,454 @@
+
+
+@import "partials/normalize";
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+body {
+  font-family: 'Convergence', sans-serif;
+  background: #1C2128;
+}
+
+h1, h2 {
+   font-family: 'Kaushan Script', cursive;
+   font-size: 5rem;
+   color: white;
+}
+
+
+.logo {
+  width: 450px;
+}
+
+img {
+  width: 100%;
+  // height: auto;
+}
+
+.wrapper {
+  max-width: 1080px;
+  text-align: center;
+  // background: #000;
+  margin: 0 auto;
+}
+
+// HEADER STYLES
+header {
+  background-image: url(../assets/headertest.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.top-nav {
+  border: 1px solid white;
+  background: #000;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+
+
+    a {
+      font-family: 'Kaushan Script', cursive;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 3rem;
+      padding: 15px 25px;
+      transition: all .3s ease;
+      margin: 20px;
+      &:hover {
+        color: #CB2026;
+      }
+    }
+  }
+}
+
+
+
+.botnav-container {
+  display: flex;
+  margin: 50px auto;
+  align-content: flex-end;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background: black;
+  // margin: 50px;
+
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 3rem;
+    &:hover {
+      color: #CB2026;
+
+    }
+  }
+}
+
+.bot-menu {
+  margin-left: 5px;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.left {
+  border-left: 3px solid #CB2026;
+}
+
+.right {
+  border-right: 3px solid #CB2026;
+}
+
+.title {
+  text-align: center;
+  position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 50%;
+   height: 30%;
+   margin: auto;
+
+}
+
+// HAMBURGER styles
+#page-nav label, #hamburger {
+  display: none;
+}
+
+#page-nav label {
+  color: #fff;
+  background: #CB2026;
+  font-style: normal;
+  font-size: 2em;
+  padding: 10px;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* [SHOW HAMBURGER] */
+    #page-nav label {
+      display: inline-block;
+    }
+
+    /* [BREAK DOWN MENU INTO VERTICAL] */
+   #page-nav ul li {
+     display: block;
+   }
+   #page-nav ul li {
+     border-top: 1px solid #333;
+   }
+
+   /* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+   #page-nav ul {
+     display: none;
+   }
+   #page-nav input:checked ~ ul {
+     display: block;
+   }
+
+   .logo, h1 {
+     display: none;
+   }
+ }
+
+ @media screen and (max-width: 950px){
+   .polaroid {
+     display: block;
+     background: red;
+   }
+
+}
+
+
+// STORY STYLES
+
+.story {
+  border: 1px solid blue;
+  p {
+    line-height: 3.5rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+}
+
+
+.store-gallery {
+  padding: 75px;
+  }
+
+.galleryItem {
+  width: 25%;
+  height: 500px;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.store-img {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+// MENU STYLES
+
+.buttonbox {
+
+}
+
+.menu-button {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3rem;
+  text-decoration: none;
+  background: url(../assets/icons/brush.png) no-repeat;
+  background-size: cover;
+  border-radius: 25%;
+  padding: 15px 55px;
+  color: white;
+  margin: 25px;
+  opacity: .6;
+  transition: .3s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.daily {
+  color: white;
+  list-style: none;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2rem;
+}
+
+.food-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  figure {
+    width: 20%;
+    // height: 300px;
+  }
+  .foodItem {
+
+  }
+}
+
+.banner {
+  background: url(../assets/banner.jpg);
+  height: 700px;
+  background-attachment: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dollar {
+  color: #CB2026;
+}
+
+// PHOLLOWERS STYLES
+
+section.phollowers {
+  background-image: url(../assets/header2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.polaroid-gallery {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.polaroid {
+  background: white;
+  height: 550px;
+  width: 350px;
+  margin: 30px;
+  position: relative;
+  img {
+    width: 300px;
+    margin: 23px;
+
+  }
+
+.phollow-polaroid {
+  font-size: 5rem;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0px 20px 10px 0px;
+  &:hover {
+    color: #CB2026;
+  }
+}
+
+  figcaption {
+    font-size: 1.6rem;
+    margin: 0 23px;
+    line-height: 2.5rem;
+  }
+}
+
+.social-phollow {
+  text-align: center;
+
+}
+
+.phollow {
+  font-size: 7rem;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  z-index: 2;
+  &:hover {
+    color: #CB2026;
+
+  }
+}
+
+.contact-form {
+  margin: 0px auto;
+  background: #333;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  width: 600px;
+  border: 3px solid white;
+  border-radius: 10px;
+  h3 {
+    font-size: 3.5rem;
+    font-family: 'Kaushan script', cursive;
+  }
+
+  a {
+    font-family: 'kaushan script', cursive;
+    padding: 25px 40px;
+    margin: 25px;
+    background: white;
+    display: inline-block;
+    text-decoration: none;
+    color: #CB2026;
+    transition: .3s background ease;
+    &:hover {
+      background: #Cb2026;
+      color: white;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+input[type] {
+  padding: 10px;
+}
+
+// FOOTER STYLES
+footer {
+  background: black;
+  color: white;
+  font-size: 2rem;
+
+  // display: flex;
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #CB2026;
+  }
+
+  p {
+    line-height: 1rem;
+  }
+}
+
+.contact-container {
+  padding: 50px 100px;
+  width: 1250px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+ .hours,  .location {
+  border-bottom: 2px solid white;
+}
+
+.contact-info {
+}
+
+.footer-logo {
+  width: 350px;
+  // float: left;
+}
+
+.footer-icon {
+  margin-left: 5px;
+}
+
+.map-container {
+  margin-left: 25%;
+  margin-top: 13%;
+}
+
+.copyright {
+  text-align: center;
+}
+
+// Menu items
+
+.menu-wrapper {
+  background: #fff;
+  text-align: center;
+  width: 1080px;
+  margin: 0 auto;
+
+}
+
+h2.menu-title {
+  text-transform: uppercase;
+  color: #fff;
+  background: url(../assets/icons/brush.png) no-repeat;
+  background-size: cover;
+  padding: 30 25px;
+
+}
+
+.menu-number {
+  color: #CB2026;
+}
+
+.menu-left, .menu-right {
+  width: 50%;
+}
+
+// COLOURS USED
+// #CB2026;
+
+// Fonts used
+// font-family: 'Convergence', sans-serif;
+// font-family: 'Kaushan Script', cursive;
+/* div.polaroid-gallery>figure.polaroid*8>img[src="assets/image$"]+figcaption */
